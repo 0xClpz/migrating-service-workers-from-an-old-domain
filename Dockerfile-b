@@ -1,0 +1,5 @@
+FROM nginx
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY website-b /usr/share/nginx/html
+COPY service-worker.js /usr/share/nginx/html

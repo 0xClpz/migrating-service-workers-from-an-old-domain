@@ -1,0 +1,11 @@
+body {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font: 5em sans-serif;
+  color: white;
+}
