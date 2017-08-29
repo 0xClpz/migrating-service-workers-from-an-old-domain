@@ -20,7 +20,7 @@ Since the service worker could not get the ressources behind the redirect, users
 Let's reproduce the issue locally then tackle it down.
 
 Let's build two NGINX docker image both using this conf
-(Associated dockerfiles can be found [here](repo url))
+(Associated dockerfiles can be found [here](https://github.com/0xClpz/migrating-service-workers-from-an-old-domain))
 ```conf
 server {
     listen       80;
@@ -141,7 +141,7 @@ because you don't have access to *a lot* of things, including window.
 
 First let's grab the list of clients using:
 ```JavaScript
-self.clients.matchAll({type: 'window});
+self.clients.matchAll({type: 'window'});
 ```
 This returns us a promise containing the list of windowClient of type window (tabs).
 
